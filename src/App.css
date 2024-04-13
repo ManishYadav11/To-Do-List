@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(242, 242, 225)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f2f2f2; /* Change the background color to a lighter shade */
+  font-family: Arial, sans-serif; /* Use a more common font for better readability */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.center-container {
+  height: 350px; /* Remove fixed height to allow content to expand */
+  width: 80%; /* Adjust the width for better responsiveness */
+  max-width: 400px; /* Set a maximum width to prevent the container from becoming too wide */
+  background-color: #6aa9a2; /* Add a white background to the container */
+  border-radius: 8px; /* Add some border radius for a softer look */
+  padding: 3ch; /* Add padding to the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.app-heading {
+  margin-bottom: 20px; /* Add some space below the heading */
+  color: #333; /* Change the color to a darker shade */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Increase margin for better separation */
+}
+
+.input-box-todo {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #b3b962;
+  border-radius: 20px; /* Increase border radius for a rounder input */
+  padding: 0 15px; /* Add padding to the input */
+  font-size: 16px;
+  outline: none;
+}
+
+.add-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #316fc1;
   color: white;
+  font-weight: bold; /* Change to bold for better visibility */
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Add transition for smoother hover effect */
 }
 
-.App-link {
-  color: #61dafb;
+.add-btn:hover {
+  background-color: #255dab; /* Darken the color on hover */
+  transform: scale(1.1); /* Add a slight scale effect on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-container {
+  margin-top: 10px;
+  padding: 10PX; /* Increase margin for better separation */
+}
+
+.list-item {
+  background-color: #4bc6d6; /* Change background color for better contrast */
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px; /* Add margin between list items */
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  margin-left: auto; /* Move icons to the right */
+}
+
+.icon-delete {
+  color: #ff6347; /* Change color to a red shade */
+  cursor: pointer;
+  transition: color 0.3s; /* Add transition for smoother color change */
+}
+
+.icon-delete:hover {
+  color: #6e1f66; /* Darken the color on hover */
 }
